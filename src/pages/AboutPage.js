@@ -2,31 +2,22 @@ import React from 'react'
 import styled from 'styled-components'
 import { PageHero } from '../components'
 import aboutImg from '../assets/hero-bcg.jpeg'
+import { Link } from 'react-router-dom'
 const AboutPage = () => {
   return (
     <main>
-      <PageHero title='about' />
-      <Wrapper className='page section section-center'>
-        <img src={aboutImg} alt='nice desk' />
-        <article>
-          <div className='title'>
-            <h2>our story</h2>
-            <div className='underline'></div>
-          </div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-            accusantium sapiente tempora sed dolore esse deserunt eaque
-            excepturi, delectus error accusamus vel eligendi, omnis beatae.
-            Quisquam, dicta. Eos quod quisquam esse recusandae vitae neque
-            dolore, obcaecati incidunt sequi blanditiis est exercitationem
-            molestiae delectus saepe odio eligendi modi porro eaque in libero
-            minus unde sapiente consectetur architecto. Ullam rerum, nemo iste
-            ex, eaque perspiciatis nisi, eum totam velit saepe sed quos
-            similique amet. Ex, voluptate accusamus nesciunt totam vitae esse
-            iste.
-          </p>
-        </article>
-      </Wrapper>
+      <PageHero title='about'/>
+      <Wrapper className='page section section-center '>
+      <img src={aboutImg} alt="nice-desk"></img>
+      <article>
+     <div className='title'>
+      <h2>Our story</h2>
+      <div className='underline'></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+     </div>
+     </article>
+     </Wrapper>
     </main>
   )
 }

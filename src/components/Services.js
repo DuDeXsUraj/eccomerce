@@ -6,20 +6,16 @@ const Services = () => {
     <Wrapper>
       <div className='section-center'>
         <article className='header'>
-          <h3>
-            custom furniture <br /> built only for you
+          <h3>Custon furniture <b />
+          build only for you
           </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum debitis consectetur reprehenderit non aliquam voluptates
-            dolore aut vero consequuntur.
-          </p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
         </article>
         <div className='services-center'>
-          {services.map((service) => {
-            const { id, icon, title, text } = service
+          {services.map((service)=>{
+            const{id,icon,text,title} = service;
             return (
-              <article className='service' key={id}>
+              <article key={id} className='service'>
                 <span className='icon'>{icon}</span>
                 <h4>{title}</h4>
                 <p>{text}</p>

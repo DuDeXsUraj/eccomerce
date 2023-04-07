@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import CartColumns from './CartColumns'
 import CartItem from './CartItem'
 import CartTotals from './CartTotals'
-const CartItems = () => {
+const CarContent = () => {
   const { cart, clearCart } = useCartContext()
 
   return (
@@ -31,6 +31,7 @@ const CartItems = () => {
     </Wrapper>
   )
 }
+
 const Wrapper = styled.section`
   .link-container {
     display: flex;
@@ -53,4 +54,4 @@ const Wrapper = styled.section`
     background: var(--clr-black);
   }
 `
-export default CartItems
+export default CarContent

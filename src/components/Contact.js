@@ -3,26 +3,16 @@ import styled from 'styled-components'
 const Contact = () => {
   return (
     <Wrapper>
-      <div className='section-center'>
-        <h3>Join our newsletter and get 20% off</h3>
-        <div className='content'>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-            sint unde quaerat ratione soluta veniam provident adipisci cumque
-            eveniet tempore?
-          </p>
-          <form className='contact-form'>
-            <input
-              type='email'
-              className='form-input'
-              placeholder='enter email'
-            />
-            <button type='submit' className='submit-btn'>
-              subscribe
-            </button>
-          </form>
-        </div>
-      </div>
+     <div className='section-center'>
+      <h3>Join our newsletter and get 20% off</h3>
+      <div className='content'>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+     <form className='contact-form'>
+      <input type='text' placeholder='enter email' className='form-input'/>
+        <button type='submit' className='submit-btn'>subscibe</button>
+     </form>
+     </div>
+     </div>
     </Wrapper>
   )
 }

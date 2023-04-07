@@ -14,34 +14,18 @@ const Sort = () => {
   return (
     <Wrapper>
       <div className='btn-container'>
-        <button
-          onClick={setGridView}
-          className={`${grid_view ? 'active' : null}`}
-        >
-          <BsFillGridFill />
-        </button>
-        <button
-          onClick={setListView}
-          className={`${!grid_view ? 'active' : null}`}
-        >
-          <BsList />
-        </button>
+      <button type='button' className={`${grid_view?'active':null}`} onClick={setGridView} ><BsFillGridFill/></button>
+      <button type='button' className={`${!grid_view?'active':null}`} onClick={setListView}><BsList/></button>
       </div>
       <p>{products.length} products found</p>
-      <hr />
+      <hr/>
       <form>
         <label htmlFor='sort'>sort by</label>
-        <select
-          name='sort'
-          id='sort'
-          value={sort}
-          onChange={updateSort}
-          className='sort-input'
-        >
-          <option value='price-lowest'>price (lowest)</option>
-          <option value='price-highest'>price (highest)</option>
-          <option value='name-a'>name (a - z)</option>
-          <option value='name-z'>name (z - a)</option>
+        <select name='sort' id='sort' value={sort} className='sort-input'  onChange={updateSort}>
+          <option value='price-lowest'>price(lowest)</option>
+          <option value='price-highest'>price(highest)</option>
+          <option value='name-a'>name(a-z)</option>
+          <option value='name-z'>name(z-a)</option>
         </select>
       </form>
     </Wrapper>

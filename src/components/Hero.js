@@ -7,23 +7,14 @@ const Hero = () => {
   return (
     <Wrapper className='section-center'>
       <article className='content'>
-        <h1>
-          design your <br />
-          comfort zone
-        </h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at
-          sed omnis corporis doloremque possimus velit! Repudiandae nisi odit,
-          aperiam odio ducimus, obcaecati libero et quia tempora excepturi quis
-          alias?
-        </p>
-        <Link to='/products' className='btn hero-btn'>
-          shop now
-        </Link>
+        <h1>Design your<br/>
+        Comfert zone</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <Link to='/products' className='btn hero-btn'>show now</Link>
       </article>
       <article className='img-container'>
-        <img src={heroBcg} alt='nice table' className='main-img' />
-        <img src={heroBcg2} alt='person working' className='accent-img' />
+        <img src={heroBcg} alt='nice table' className='main-img'></img>
+        <img src={heroBcg2} alt='person working' className='accent-img'></img>
       </article>
     </Wrapper>
   )
